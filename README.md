@@ -1,33 +1,40 @@
-# DB設計
+DB design
+====
 
 **table**
 
 ###users
 
-|column|type|
+##column
 
-|id|integer|
+* column|type|
 
-|name|string|
+* id|integer|
 
-|email|text|
+* name|string|
 
-|password|text|
+* email|text|
+
+* password|text|
 
 ###groups
 
-|id|integer|
+##column
 
-|name|string|
+* id|integer|
+
+* name|string|
 
 ###messages
 
-|id|integer|
+##column
 
-|body|text|
+* id|integer|
 
-|image|
+* body|text|
 
-|user_id|references|
+* image|text|
 
-|group_id|references|
+* user_id|references|
+
+* group_id|references|
