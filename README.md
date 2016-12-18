@@ -21,7 +21,7 @@ DB design
 
 * has_many :messages
 
-* belongs_to :groups
+* has_many :groups, through: :groups_users
 
 ###groups
 
@@ -35,7 +35,7 @@ DB design
 
 * has_many :messages
 
-* has_many :users
+* has_many :users, through: :group_users
 
 ###messages
 
@@ -50,6 +50,20 @@ DB design
 * user_id|references|
 
 * group_id|references|
+
+##association
+
+* belongs_to :user
+
+* belongs_to :group
+
+###groups_users
+
+* id|integer|
+
+* group_id|references|
+
+* users_id|references|
 
 ##association
 
