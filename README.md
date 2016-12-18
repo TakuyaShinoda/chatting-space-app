@@ -1,13 +1,11 @@
 DB design
 ====
 
-**table**
-
 #users
 
 ##column
 
-######* ex. column|type|
+###### ex. column|type|
 
 * id|integer|
 
