@@ -3,11 +3,11 @@ DB design
 
 **table**
 
-###users
+#users
 
 ##column
 
-* column|type|
+######* ex. column|type|
 
 * id|integer|
 
@@ -23,7 +23,7 @@ DB design
 
 * has_many :groups, through: :groups_users
 
-###groups
+#groups
 
 ##column
 
@@ -37,7 +37,7 @@ DB design
 
 * has_many :users, through: :group_users
 
-###messages
+#messages
 
 ##column
 
@@ -57,7 +57,9 @@ DB design
 
 * belongs_to :group
 
-###groups_users
+#groups_users
+
+##column
 
 * id|integer|
 
