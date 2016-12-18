@@ -17,6 +17,12 @@ DB design
 
 * password|text|
 
+##association
+
+* has_many :messages
+
+* belongs_to :groups
+
 ###groups
 
 ##column
@@ -24,6 +30,12 @@ DB design
 * id|integer|
 
 * name|string|
+
+##association
+
+* has_many :messages
+
+* has_many :users
 
 ###messages
 
@@ -38,3 +50,9 @@ DB design
 * user_id|references|
 
 * group_id|references|
+
+##association
+
+* belongs_to :user
+
+* belongs_to :group
