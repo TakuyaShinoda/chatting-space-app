@@ -19,7 +19,7 @@ DB design
 
 * has_many :messages
 
-* has_many :groups, through: :groups_users
+* has_many :groups, through: :group_users
 
 #groups
 
@@ -55,7 +55,7 @@ DB design
 
 * belongs_to :group
 
-#groups_users
+#group_users
 
 ##column
 
