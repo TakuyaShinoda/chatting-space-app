@@ -11,7 +11,7 @@ DB design
 
 * name|string|null:false|
 
-* email|text|null:false|
+* email|text|null:false, add_index|
 
 * password|text|null:false|
 
