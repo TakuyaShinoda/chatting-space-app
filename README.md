@@ -45,9 +45,9 @@ DB design
 
 * image|text||
 
-* user|references|foreign_key: true|
+* user_id|references|foreign_key: true|
 
-* group|references|foreign_key: true|
+* group_id|references|foreign_key: true|
 
 ##association
 
@@ -61,7 +61,7 @@ DB design
 
 * id|integer|null:false|
 
-* group|references|foreign_key: true|
+* group_id|references|foreign_key: true|
 
 * user_id|references|foreign_key: true|
 
