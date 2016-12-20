@@ -5,15 +5,15 @@ DB design
 
 ##column
 
-###### ex. column|type|
+###### ex. column|type|option|
 
-* id|integer|
+* id|integer|null:false|
 
-* name|string|
+* name|string|null:false|
 
-* email|text|
+* email|text|null:false|
 
-* password|text|
+* password|text|null:false|
 
 ##association
 
@@ -25,9 +25,9 @@ DB design
 
 ##column
 
-* id|integer|
+* id|integer|null:false|
 
-* name|string|
+* name|string|null:false|
 
 ##association
 
@@ -39,15 +39,15 @@ DB design
 
 ##column
 
-* id|integer|
+* id|integer|null:false|
 
-* body|text|
+* body|text||
 
-* image|text|
+* image|text||
 
-* user_id|references|
+* user|references|foreign_key: true|
 
-* group_id|references|
+* group|references|foreign_key: true|
 
 ##association
 
@@ -59,11 +59,11 @@ DB design
 
 ##column
 
-* id|integer|
+* id|integer|null:false|
 
-* group_id|references|
+* group|references|foreign_key: true|
 
-* users_id|references|
+* user_id|references|foreign_key: true|
 
 ##association
 
