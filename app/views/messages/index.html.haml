@@ -1,0 +1,50 @@
+.chat-side
+  .chat-user.clearfix
+    %h5 篠田
+    .chat-user__actions
+      %i.fa.fa-pencil-square-o
+      %i.fa.fa-cog
+
+  %ul.chat-groups
+    %li.chat-group
+      %p.chat-group__name group1
+      %p.chat-group__message aaaaaaaaaaa
+    %li.chat-group
+      %p.chat-group__name group2
+      %p.chat-group__message bbbbbbbbbbb
+
+.chat-main
+  .chat-header.clearfix
+    .chat-header--left
+      %h2 group1
+      %p.chat-header__users Members: 篠田
+      .chat-header--right
+        %a.chat-header__edit-btn Edit
+
+    .chat-body
+      %ul.chat-messages
+        %li.chat-massege
+          .chat-main-message-title
+            %p.chat-main-massage-title_name 篠田
+            %p.chat-main-massage-title_time 2016/12/10 07:07:21
+          %p.chat-main-massege__massege あああああああああ
+        %li.chat-massege
+          .chat-main-message-title
+            %p.chat-main-massage-title_name 篠田
+            %p.chat-main-massage-title_time 2016/12/17 16:05:46
+          %p.chat-main-massege__massege いいいいいいいい
+        %li.chat-massege
+          .chat-main-message-title
+            %p.chat-main-massage-title_name &#x7BE0;&#x7530;
+            %p.chat-main-massage-title_time 2016/12/23 15:39:45
+          %p.chat-main-massege__massege うううううううううううう
+
+    .chat-footer
+      .chat-footer__body
+        %textarea{:row => "1"}>
+        , placeholder="type a message"&gt;
+      .chat-footer__file
+        %i.fa.fa-image
+      .chat-footer__input
+        %input{:type => "submit"}>/
+        , value="Send"&gt;
