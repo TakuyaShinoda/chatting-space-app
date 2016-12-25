@@ -1,4 +1,4 @@
-.chat-header clearfix {
+.chat-header {
 	padding-right: 40px;
 	padding-left: 40px;
 	background-color: #ffffff;
@@ -21,7 +21,7 @@
 }
 
 .chat-header--right {
-	float: : right;
+	float: right;
 	a {
 		margin: 28px 0;
 		padding-right: 20px;

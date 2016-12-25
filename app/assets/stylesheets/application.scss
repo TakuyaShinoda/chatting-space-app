@@ -1,10 +1,20 @@
 @import "./reset";
+@import "./mixin/clearfix";
 @import "./modules/sidebar";
+@import "./modules/main";
 @import "./modules/header";
 @import "./modules/body";
 @import "./modules/footer";
 @import "font-awesome";
 
-/*
- *= require font-awesome
- */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
