@@ -1,0 +1,15 @@
+.chat-body {
+	padding: 30px;
+	height: calc(100% - 190px);
+	overflow-y: scroll;
+	background-color: #AAAAAA;
+	color: #434A54;
+	ul {
+		position: absolute;
+		right: 40px;
+		left: 40px;
+	    li {
+            margin-bottom: 40px;
+		}
+	}
+}
