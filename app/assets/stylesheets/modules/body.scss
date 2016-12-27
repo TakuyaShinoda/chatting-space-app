@@ -1,14 +1,41 @@
 .chat-body {
-	padding: 30px 0;
-	overflow-y: scroll;
+    position: relative;
+	padding: 30px;
 	height: calc(100vh - 190px);
-	background-color: #AAAAAA;
+	overflow-y: scroll;
+	background-color: white;
+}
+
+.chat-messages {
+	position: absolute;
+	right: 40px;
+	left: 40px;
+	lift-style: none;
+	padding: 0;
+}
+
+.chat-message {
+	margin-bottom: 40px;
+}
+
+.chat-main-message-title {
+	line-height: 20px;
+}
+
+.chat-main-message-title_name {
+	float: left;
+	margin-bottom: 10px;
+	font-size: 16px;
 	color: #434A54;
-	ul {
-		right: 40px;
-		left: 40px;
-	    li {
-            margin-bottom: 40px;
-		}
-	}
+}
+
+.chat-main-message-title_time {
+    float: left;
+    margin-left: 10px;
+	color: #999999;
+	font-size: 12px;
+}
+
+.chat-main-message__message {
+	font-size: 14px;
 }
