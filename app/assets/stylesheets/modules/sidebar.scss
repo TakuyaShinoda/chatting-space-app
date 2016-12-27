@@ -6,7 +6,6 @@
 }
 
 .chat-user {
-	height: 60px;
 	padding: 20px;
 	color: #ffffff;
 	background-color: #253141;
@@ -34,13 +33,15 @@
 .chat-groups {
 	margin: 0;
 	padding: 0;
+  height: calc(100vh - 60px);
 	color: #ffffff;
   background-color: #2f3e51;
 }
 
 .chat-group {
-  height: 86px;
-  padding: 20px;
+  height: 71px;
+  padding-left: 20px;
+  padding-right: 20px;
   &__name {
     font-size: 15px;
     color: #ffffff;
