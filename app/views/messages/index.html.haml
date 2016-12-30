@@ -1,51 +1,52 @@
-.chat-side
-  .chat-user
-    .chat-user__name
-      %h5 篠田
-    .chat-user__actions
-      %i.fa.fa-pencil-square-o
-      %i.fa.fa-cog
+.chat
+  .chat-side
+    .chat-user
+      .chat-user__name
+        %h5 篠田
+      .chat-user__actions
+        %i.fa.fa-pencil-square-o
+        %i.fa.fa-cog
 
-  %ul.chat-groups
-    %li.chat-group
-      %p.chat-group__name group1
-      %p.chat-group__message aaaaaaaaaaa
-    %li.chat-group
-      %p.chat-group__name group2
-      %p.chat-group__message bbbbbbbbbbb
+    %ul.chat-groups
+      %li.chat-group
+        %p.chat-group__name group1
+        %p.chat-group__message aaaaaaaaaaa
+      %li.chat-group
+        %p.chat-group__name group2
+        %p.chat-group__message bbbbbbbbbbb
 
-.chat-main
-  .chat-header
-    .chat-header--left
-      %h2 group1
-      %p.chat-header__users Members: 篠田
-    .chat-header--right
-      %a.chat-header__edit-btn Edit
+  .chat-main
+    .chat-header
+      .chat-header--left
+        %h2 group1
+        %p.chat-header__users Member: 篠田
+      .chat-header--right
+        %a.chat-header__edit-btn Edit
 
-  .chat-body
-    %ul.chat-messages
-      %li.chat-message
-        .chat-main-message-title
-          %p.chat-main-message-title_name 篠田
-          %p.chat-main-message-title_time 2016/12/10 07:07:21
-        %p.chat-main-message__massege あああああああああ
-      %li.chat-message
-        .chat-main-message-title
-          %p.chat-main-message-title_name 篠田
-          %p.chat-main-message-title_time 2016/12/17 16:05:46
-        %p.chat-main-message__message いいいいいいいい
-      %li.chat-massege
-        .chat-main-message-title
-          %p.chat-main-message-title_name 篠田
-          %p.chat-main-message-title_time 2016/12/23 15:39:45
-        %p.chat-main-message__message うううううううううううう
+    .chat-body
+      %ul.chat-messages
+        %li.chat-message
+          .chat-message__header
+            %p.chat-message__name 篠田
+            %p.chat-message__time 2016/12/10 07:07:21
+          %br/
+          %p.chat-message__body あああああああああ
+        %li.chat-message
+          .chat-message__header
+            %p.chat-message__name 篠田
+            %p.chat-message__time 2016/12/17 16:05:46
+          %br/
+          %p.chat-message__body いいいいいいいいいい
+        %li.chat-message
+          .chat-message__header
+            %p.chat-message__name 篠田
+            %p.chat-message__time 2016/12/23 15:39:45
+          %br/
+          %p.chat-message__body うううううううううう
 
-  .chat-footer
-    .chat-footer__body
-      %textarea{:row => "1"}>
-      , placeholder="type a message"&gt;
-    .chat-footer__file
-      %i.fa.fa-image
-    .chat-footer__input
-      %input{:type => "submit"}>/
-      , value="Send"&gt;
+    .chat-footer
+      .footer__body
+        %textarea(placeholder="type a message")
+        %a
+          %i.fa.fa-picture-o
+        %input(type="submit" value="Send")

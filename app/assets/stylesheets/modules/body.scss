@@ -1,6 +1,7 @@
 .chat-body {
     position: relative;
-	padding: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 	height: calc(100vh - 190px);
 	overflow-y: scroll;
 	background-color: white;
@@ -18,24 +19,29 @@
 	margin-bottom: 40px;
 }
 
-.chat-main-message-title {
+.chat-message:first-child {
+	padding-top: 30px;
+}
+
+.chat-message__header {
 	line-height: 20px;
 }
 
-.chat-main-message-title_name {
+.chat-message__name {
 	float: left;
 	margin-bottom: 10px;
 	font-size: 16px;
 	color: #434A54;
 }
 
-.chat-main-message-title_time {
+.chat-message__time {
     float: left;
     margin-left: 10px;
 	color: #999999;
-	font-size: 12px;
+	font-size: 14px;
 }
 
-.chat-main-message__message {
+.chat-message__body {
 	font-size: 14px;
+    color: #434A54;
 }
