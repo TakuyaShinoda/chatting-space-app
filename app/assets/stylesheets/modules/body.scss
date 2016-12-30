@@ -1,7 +1,6 @@
 .chat-body {
     position: relative;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 0 40px;
 	height: calc(100vh - 190px);
 	overflow-y: scroll;
 	background-color: white;
@@ -11,7 +10,7 @@
 	position: absolute;
 	right: 40px;
 	left: 40px;
-	lift-style: none;
+	list-style: none;
 	padding: 0;
 }
 

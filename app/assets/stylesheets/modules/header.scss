@@ -1,7 +1,6 @@
 .chat-header {
     height: 100px;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding: 0 40px;
 	background-color: #ffffff;
 	border-bottom: 1px solid #eee;
 }
@@ -32,8 +31,7 @@
 	display: inline-block;
 	margin: 28px 0;
     font-size: 14px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0 20px;
     line-height: 40px;
     color: #38aef0;
 	border: 2px solid;
