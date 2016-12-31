@@ -1,58 +1,50 @@
 .chat-side {
-	float: left;
-	width: 250px;
-  height: 100%;
-  background-color: #2f3e51;
-}
-
-.chat-user {
-	padding: 20px;
-	color: #ffffff;
-	background-color: #253141;
-  @include clearfix();
-}
-
-.chat-user__name {
-    float: left;
-    h5 {
-      letter-spacing: 2px;
-      font-size: 16px;
-      line-height: 60px;
+  	float: left;
+  	width: 250px;
+    height: 100%;
+    background-color: #2f3e51;
+    .chat-user {
+      	padding: 20px;
+      	color: $sidebar-fc;
+      	background-color: #253141;
+        @include clearfix();
+        &__name {
+            float: left;
+            h5 {
+                letter-spacing: 2px;
+                font-size: $name-fs;
+                line-height: 60px;
+            }
+        }
+        &__actions {
+            float: right;
+            i {
+              	color: $sidebar-fc;
+              	font-size: 16px;
+                line-height: 60px;
+            }
+        }
+    }
+    .chat-groups {
+      	margin: 0;
+      	padding: 0;
+        height: calc(100vh - 100px);
+      	color: $sidebar-fc;
+        background-color: #2f3e51;
+        .chat-group {
+            height: 71px;
+            padding: 0 20px;
+            &__name {
+                font-size: 15px;
+                color: $sidebar-fc;
+            }
+            &__message {
+                font-size: 11px;
+                color: $sidebar-fc;
+            }
+        }
+        .chat-group:first-child {
+            padding-top: 20px;
+        }
     }
 }
-
-.chat-user__actions {
-    float: right;
-    i {
-    	color: #ffffff;
-    	font-size: 16px;
-      line-height: 60px;
-    }
-}
-
-.chat-groups {
-	margin: 0;
-	padding: 0;
-  height: calc(100vh - 100px);
-	color: #ffffff;
-  background-color: #2f3e51;
-}
-
-.chat-group {
-  height: 71px;
-  padding-left: 20px;
-  padding-right: 20px;
-  &__name {
-    font-size: 15px;
-    color: #ffffff;
-  }
-  &__message {
-  	font-size: 11px;
-  	color: #ffffff;
-  }
-}
-
-.chat-group:first-child {
-  padding-top: 20px;
-}
-
