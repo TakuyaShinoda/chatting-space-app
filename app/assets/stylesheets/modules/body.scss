@@ -14,13 +14,13 @@
 			  margin-bottom: 40px;
 			      &__header {
 					line-height: 20px;
-						.chat-message__name {
+						&__name {
 						  float: left;
 						  margin-bottom: 10px;
 						  font-size: name-fs;
 						  color: $message-fc;
 						}
-						.chat-message__time {
+						&__time {
 						  float: left;
 						  margin-left: 10px;
 						  color: #999999;
