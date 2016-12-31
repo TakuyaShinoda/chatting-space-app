@@ -4,36 +4,43 @@
   height: calc(100vh - 190px);
   overflow-y: scroll;
   background-color: white;
-      .chat-messages {
-	    position: absolute;
-	    right: 40px;
-	    left: 40px;
-	    list-style: none;
-	    padding: 0;
-			.chat-message {
-			  margin-bottom: 40px;
-			      &__header {
-					line-height: 20px;
-						&__name {
-						  float: left;
-						  margin-bottom: 10px;
-						  font-size: name-fs;
-						  color: $message-fc;
-						}
-						&__time {
-						  float: left;
-						  margin-left: 10px;
-						  color: #999999;
-						  font-size: message-fs;
-						}
-				  }
-				  &__body {
-				    font-size: message-fs;
-				    color: $message-fc;
-			      }
-		    }
-	  }
-	  .chat-message:first-child {
-		padding-top: 30px;
-	  }
+
+    .chat-messages {
+      position: absolute;
+      right: 40px;
+      left: 40px;
+      list-style: none;
+      padding: 0;
+
+        .chat-message {
+          margin-bottom: 40px;
+
+            &__header {
+              line-height: 20px;
+
+                &__name {
+                  float: left;
+                  margin-bottom: 10px;
+                  font-size: name-fs;
+                  color: $message-fc;
+                }
+
+                &__time {
+                  float: left;
+                  margin-left: 10px;
+                  color: #999999;
+                  font-size: message-fs;
+                }
+            }
+
+            &__body {
+              font-size: message-fs;
+              color: $message-fc;
+            }
+        }
+    }
+
+    .chat-message:first-child {
+      padding-top: 30px;
+    }
 }
