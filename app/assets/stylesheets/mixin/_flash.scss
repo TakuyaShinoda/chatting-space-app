@@ -1,0 +1,7 @@
+@mixin flash() {
+  text-align: center;
+  line-height: 30px;
+  color: $sidebar_fc;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
