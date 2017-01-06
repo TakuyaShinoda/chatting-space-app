@@ -1,0 +1,13 @@
+.flash {
+  width: 100%;
+
+      &__notice {
+        background-color: $btn-fc;
+        @include flash();
+      }
+
+      &__alert {
+        background-color: #d65f4c;
+        @include flash();
+      }
+}
