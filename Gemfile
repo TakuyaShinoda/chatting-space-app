@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_girl_rails'
   gem 'pry-rails'
+  gem 'faker'
 end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
