@@ -12,6 +12,7 @@ class GroupsController < ApplicationController
 
   def create
     Group.create(group_params)
+    redirect_to root_path
   end
 
   def edit
@@ -19,6 +20,7 @@ class GroupsController < ApplicationController
 
   def update
     @group.update(group_params)
+    redirect_to root_path
   end
 
   private
