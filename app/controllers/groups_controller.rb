@@ -16,6 +16,7 @@ class GroupsController < ApplicationController
   end
 
   def edit
+    def hoge; end
   end
 
   def update
