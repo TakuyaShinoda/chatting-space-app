@@ -15,9 +15,7 @@ class GroupsController < ApplicationController
     redirect_to root_path
   end
 
-  def edit
-    def hoge; end
-  end
+  def edit; end
 
   def update
     @group.update(group_params)
