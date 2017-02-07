@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-top: 60px;
   padding: 40px;
-  background-color: #fff;
+  background-color: $sidebar-fc;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
@@ -14,11 +14,11 @@
       text-align: center;
     }
 
-    .chat-group-form__field {
+    &__field {
       margin-top: 30px;
       @include clearfix();
 
-        .chat-group-form__field--left {
+        &--left {
           float: left;
           width: 30%;
           padding-right: 20px;
@@ -33,7 +33,7 @@
             }
         }
 
-        .chat-group-form__field--right {
+        &--right {
           float: right;
           width: 70%;
 
@@ -52,17 +52,17 @@
               font-size: 14px;
               border-bottom: 1px solid #ddd;
 
-                .chat-group-user__name {
+                &__name {
                   float: left;
                 }
             }
 
-            .chat-group-form__field--right__btn {
+            &__btn {
 
                 input {
                   display: inline-block;
                   padding: 12px 20px;
-                  color: #fff;
+                  color: $sidebar-fc;
                   background-color: #38aef0;
                   border: 0;
                   width: 80px;
