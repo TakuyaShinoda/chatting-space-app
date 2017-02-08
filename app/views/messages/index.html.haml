@@ -1,21 +1,5 @@
 .chat
-  .chat-side
-    .chat-user
-      .chat-user__name
-        %h5 篠田
-      .chat-user__actions
-        = link_to new_group_path(@group), class: 'chat-user__actions' do
-          %i.fa.fa-cog
-        = link_to edit_user_registration_path(@user), class: 'chat-user__actions' do
-          %i.fa.fa-pencil-square-o
-
-    %ul.chat-groups
-      %li.chat-group
-        %p.chat-group__name group1
-        %p.chat-group__message aaaaaaaaaaa
-      %li.chat-group
-        %p.chat-group__name group2
-        %p.chat-group__message bbbbbbbbbbb
+  = render 'groups/side'
 
   .chat-main
     .chat-header
