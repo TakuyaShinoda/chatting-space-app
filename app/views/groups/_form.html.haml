@@ -6,10 +6,10 @@
       = f.text_field :name, placeholder: "グループ名を入力してください"
   .chat-group-form__field
     .chat-group-form__field--left
-      = f.label "チャットメンバー"
+      = f.label :name, "チャットメンバーを追加"
     .chat-group-form__field--right
-      .chat-group-users
-        %p.chat-group-user__name shinoda
+      = collection_check_boxes(:group, :user_ids, User.all, :id, :name) do |f|
+        = f.label { f.check_box + f.text }
   .chat-group-form__field
     .chat-group-form__field--right
       .chat-group-form__field--right__btn

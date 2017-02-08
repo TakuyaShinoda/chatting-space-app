@@ -37,8 +37,13 @@
           float: right;
           width: 70%;
 
-            input {
+            label {
               float: left;
+              width: 70px;
+              line-height: 50px;
+            }
+
+            input {
               width: 100%;
               line-height: 30px;
               padding: 10px 15px;
