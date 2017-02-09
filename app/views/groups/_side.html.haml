@@ -9,8 +9,8 @@
         %i.fa.fa-pencil-square-o
 
   %ul.chat-groups
-    = link_to group_messages_path(@groups) do
-      - @groups.each do |group|
+    - @groups.each do |group|
+      = link_to group_messages_path(group) do
         %li.chat-group
           %p.chat-group__name
             = group.name
