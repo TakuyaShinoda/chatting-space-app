@@ -1,29 +1,15 @@
 .chat
-  .chat-side
-    .chat-user
-      .chat-user__name
-        %h5 篠田
-      .chat-user__actions
-        = link_to new_group_path(@group), class: 'chat-user__actions' do
-          %i.fa.fa-cog
-        = link_to edit_user_registration_path(@user), class: 'chat-user__actions' do
-          %i.fa.fa-pencil-square-o
-
-    %ul.chat-groups
-      %li.chat-group
-        %p.chat-group__name group1
-        %p.chat-group__message aaaaaaaaaaa
-      %li.chat-group
-        %p.chat-group__name group2
-        %p.chat-group__message bbbbbbbbbbb
+  = render 'groups/side'
 
   .chat-main
     .chat-header
       .chat-header--left
-        %h2 group1
-        %p.chat-header__users Member: 篠田
+        = @group.name
+        %p.chat-header__users
+          Member:
+          = @group.users.pluck(:name).join(", ")
       .chat-header--right
-        %a.chat-header__edit-btn Edit
+        = link_to 'Edit', edit_group_path(@group), class: 'chat-header__edit-btn'
 
     .chat-body
       %ul.chat-messages

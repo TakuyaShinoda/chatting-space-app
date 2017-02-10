@@ -6,20 +6,18 @@
 
     &--left {
       float: left;
-
-        h2 {
-          margin-top: 20px;
-          line-height: 50px;
-          letter-spacing: 2px;
-          color: #333;
-          font-size: 20px;
-          font-weight: 400;
-        }
+      margin-top: 20px;
+      line-height: 50px;
+      letter-spacing: 2px;
+      color: #333;
+      font-size: 20px;
+      font-weight: 400;
 
         .chat-header__users {
           line-height: 20px;
           color: #999;
           font-size: 12px;
+          letter-spacing: 0px;
         }
     }
 
@@ -34,6 +32,7 @@
           line-height: 40px;
           color: $btn-fc;
           border: 2px solid;
+          text-decoration: none;
         }
     }
 }

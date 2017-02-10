@@ -12,12 +12,9 @@
 
         &__name {
           float: left;
-
-            h5 {
-              letter-spacing: 2px;
-              font-size: $name-fs;
-              line-height: 60px;
-            }
+          line-height: 60px;
+          letter-spacing: 2px;
+          font-size: $name-fs;
         }
 
         &__actions {
