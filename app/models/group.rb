@@ -3,5 +3,10 @@ class Group < ApplicationRecord
 
   has_many :group_users
   has_many :users, through: :group_users
+  has_many :messages
   accepts_nested_attributes_for :users
+
+  def last_message
+  	Message.last.body
+  end
 end
