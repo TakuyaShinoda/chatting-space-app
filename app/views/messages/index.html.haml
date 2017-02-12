@@ -19,7 +19,7 @@
               %p.chat-message__header__name
                 = message.user.name
               %p.chat-message__header__time
-                = message.created_at
+                = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
             %br/
             %p.chat-message__body
               = message.body
