@@ -13,16 +13,7 @@
 
     .chat-body
       %ul.chat-messages
-        - @messages.each do |message|
-          %li.chat-message
-            .chat-message__header
-              %p.chat-message__header__name
-                = message.user.name
-              %p.chat-message__header__time
-                = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-            %br/
-            %p.chat-message__body
-              = message.body
+        = render partial: 'message'
 
     .chat-footer
       = form_for [@group, @message] do |f|
