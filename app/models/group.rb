@@ -7,6 +7,6 @@ class Group < ApplicationRecord
   accepts_nested_attributes_for :users
 
   def last_message
-  	self.messages.last
+    self.messages.last
   end
 end
