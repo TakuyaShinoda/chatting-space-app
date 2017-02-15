@@ -9,5 +9,4 @@ class Group < ApplicationRecord
   def last_message
     messages.last
   end
-
 end
