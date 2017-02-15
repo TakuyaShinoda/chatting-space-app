@@ -1,9 +1,10 @@
 class GroupsController < ApplicationController
 
+  before_action :authenticate_user!
   before_action :set_group, only: %i( edit update )
 
   def index
-    @groups = current_user.groups
+    @groups = current_user.groups.desc
   end
 
   def new

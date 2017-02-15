@@ -25,15 +25,20 @@
           display: block;
         }
 
-        a {
+        label {
           line-height: 50%;
           position: absolute;
           right: 120px;
           padding: 0 10px;
 
+            input {
+              display: none;
+            }
+
             i {
               font-size: 20px;
               line-height: 50px;
+              margin-right: 10px;
             }
         }
 
