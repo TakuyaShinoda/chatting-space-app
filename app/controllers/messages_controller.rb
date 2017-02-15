@@ -4,18 +4,16 @@ class MessagesController < ApplicationController
 
   def index
     @groups = current_user.groups
-    @messages = Message.where(group_id: params[:group_id])
+    @messages = @group.messages
     @message = Message.new
-    @last_message = @messages.last
   end
 
   def create
     @message = @group.messages.new(message_params)
-    if @message.body.blank?
-      redirect_to group_messages_path, alert: 'メッセージが投稿できません。'
-    else
-      @message.save
+    if @message.save
       redirect_to group_messages_path
+    else
+      redirect_to group_messages_path, alert: 'メッセージが投稿できません。'
     end
   end
 
