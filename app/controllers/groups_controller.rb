@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   before_action :set_group, only: %i( edit update )
 
   def index
-    @groups = current_user.groups.order("created_at DESC")
+    @groups = current_user.groups.desc
   end
 
   def new
