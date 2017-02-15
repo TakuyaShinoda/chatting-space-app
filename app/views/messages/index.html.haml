@@ -13,7 +13,8 @@
 
     .chat-body
       %ul.chat-messages
-        = render partial: 'message'
+        - @messages.each do |message|
+          = render partial: "message", locals: { message: message }
 
     .chat-footer
       = form_for [@group, @message] do |f|
