@@ -2,6 +2,7 @@ class GroupsController < ApplicationController
 
   before_action :authenticate_user!
   before_action :set_group, only: %i( edit update )
+  before_action :move_to_index, only: %i( edit )
 
   def index
     @groups = current_user.groups.desc
@@ -31,6 +32,11 @@ class GroupsController < ApplicationController
 
   def set_group
     @group = Group.find(params[:id])
+  end
+
+  def move_to_index
+    group_ids = current_user.groups.pluck(:id)
+    redirect_to action: :index unless group_ids.include?(params[:id].to_i)
   end
 
 end
