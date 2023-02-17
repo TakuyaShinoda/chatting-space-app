@@ -3,7 +3,7 @@ DB design
 
 #users
 
-##column
+## column
 
 ###### ex. column|type|option|
 
@@ -15,29 +15,29 @@ DB design
 
 * password|text|null:false|
 
-##association
+## association
 
 * has_many :messages
 
 * has_many :groups, through: :group_users
 
-#groups
+# groups
 
-##column
+## column
 
 * id|integer|null:false|
 
 * name|string|null:false|
 
-##association
+## association
 
 * has_many :messages
 
 * has_many :users, through: :group_users
 
-#messages
+# messages
 
-##column
+## column
 
 * id|integer|null:false|
 
@@ -49,15 +49,15 @@ DB design
 
 * group_id|references|foreign_key: true|
 
-##association
+## association
 
 * belongs_to :user
 
 * belongs_to :group
 
-#group_users
+# group_users
 
-##column
+## column
 
 * id|integer|null:false|
 
@@ -65,7 +65,7 @@ DB design
 
 * user_id|references|foreign_key: true|
 
-##association
+## association
 
 * belongs_to :user
 
